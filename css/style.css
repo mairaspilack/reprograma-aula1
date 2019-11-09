@@ -1,0 +1,320 @@
+/* reset de página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* definições padrão*/
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+}
+/* menu de navegação*/
+.nav {
+    background-color:#829dad;
+}
+
+.nav__menu{
+    display: flex;
+    flex-direction;: row;
+    justify-content: flex-end;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 5vw;
+    align-items: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1vw;
+}
+
+.nav__mobile {
+    display: none;
+  }
+
+/*banner mundo gelado*/
+  .banner__title {
+      font-family: "Varela Round", sans-serif;
+      font-size: 105px;
+      text: center;
+      text-transform: uppercase;
+      color: #fff;
+      opacity: 0.75;
+      padding-top: 15vh;
+  }
+
+  .banner__subtitle {
+    font-family: "Varela Round", sans-serif;
+    font-size: 22px;
+    text: center;
+    color: #fff;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+
+  .banner {
+    background-image: url(../img/foto-banner.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+/* botão quero saber mais*/
+.btn {
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #829dad;
+    padding: 2vh;
+    margin: 5vh;
+    border-radius: 5px;
+}
+/* texto sobre a agência*/
+.about{
+    background-color: #000;
+    opacity: 0.75;
+    padding: 5vh;
+    color: #fff;
+}
+
+.about__title {
+    color: #fff;
+    font-size: 22px;
+    font-family: "Varela Round", sans-serif;
+    padding-bottom: 5vh;
+}
+/* siberia */
+.destination--siberia {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.destination--siberia__img {
+    width: 84%;
+    max-width: 100%;
+    height: auto;
+    margin: 0vh 5vh 0vh 0vh;
+}
+
+.destination__text h3 {
+ font-size: 22px;
+}
+
+.destination__text {
+    text-align: left;
+}
+/* groelândia */
+.destination--groenlandia {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: #000;
+    opacity: 0.8;
+    align-items: center;
+}
+
+.destination--groenlandia__img {
+    max-width: 50%;
+    height: auto;
+}
+
+.title_groelandia {
+    color: #fff;
+    font-size: 22px;
+    font-family: "Varela Round", sans-serif;
+    text-align: left;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+}
+
+.destination_paragraph--groenlandia {
+    color: #fff;
+    font-size: 13px;
+    text-align: left;
+    padding: 0 5vw 5vw 5vw;
+}
+
+/* antártida */
+.destination--antartida {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: #000;
+    opacity: 0.8;
+    align-items: center;
+    
+}
+
+.destination--antartida__img {
+    max-width: 50%;
+    height: auto;
+}
+
+.title_antartica {
+    color: #fff;
+    font-size: 22px;
+    font-family: "Varela Round", sans-serif;
+    text-align: right;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 5vw;
+}
+
+.destination_paragraph {
+    color: #fff;
+    font-size: 13px;
+    text-align: right;
+    padding: 0 5vw 5vw 5vw;
+}
+/* footer */
+footer{
+    background: #000;
+    opacity: 0.8;   
+    color: #fff;
+    width: 100vw;
+    justify-content: center;
+    padding: 5vh;
+    margin-top: 5vh;
+}
+
+.footer li{
+    padding: 1vw;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    padding: 1vw;
+    list-style: none;
+}
+
+/* mobile */
+/* condição até 900px */
+
+@media (max-width: 900px) {
+    
+    /* menu de navegação */
+    .nav__mobile {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .nav{
+      background-color: #fff;
+      }
+
+    .nav__link {
+        display:none;
+    }
+
+    /*banner mundo gelado*/
+    .banner__title {
+        font-size: 50px;
+        padding-top: 5vh
+    }
+    .banner__subtitle {
+        font-size: 15px;
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+    }
+    
+    .banner {
+        background-image: url(../img/foto-banner.jpg);
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+    }
+
+    /* botão quero saber mais*/
+    .btn {
+        font-size: 10px;
+        padding: 2vh;
+        margin: 5vh;
+        border-radius: 2px;
+    }
+
+    /* texto sobre a agência*/
+    .about{
+        padding: 3vh;
+    }
+
+    .about__title {
+        font-size: 18px;
+        padding-bottom: 5vh;
+    }
+
+    /* siberia */
+    .destination--siberia {
+        display: block;
+    }
+
+    .destination--siberia__img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .destination__text {
+        text-align: center;
+    }
+
+    /* groelândia */
+    .destination--groenlandia {
+        display: block;
+        margin: 5vh;
+    }
+
+    .destination--groenlandia__img {
+        width: 100;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .title_groelandia {
+        text-align: center;
+    }
+
+    .destination_paragraph--groenlandia {
+        text-align: center;
+    }
+
+    /* antártida */
+    .destination--antartida {
+        display: block;
+        margin: 5vh;
+    }
+
+    .destination--antartida__img {
+        width: 100;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .title_antartica {
+        text-align: center;
+    }
+
+    .destination_paragraph {
+        text-align: center;
+    }
+
+}
